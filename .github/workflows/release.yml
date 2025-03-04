@@ -2,10 +2,6 @@ name: Java CI/CD
 
 on:
   workflow_dispatch:
-    inputs:
-      release_tag:
-        description: "releases"
-        required: false
   push:
     tags:
       - "v*" 
@@ -48,26 +44,18 @@ jobs:
         id: get_artifact_id
         run: echo "ARTIFACT_ID=$(mvn -q -Dexec.executable=echo -Dexec.args='${project.artifactId}' exec:exec)" >> $GITHUB_ENV
 
-      - name: Determine Release Tag
-        id: determine_tag
-        run: |
-          if [[ "${{ github.ref }}" == refs/tags/* ]]; then
-            echo "RELEASE_TAG=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
-          else
-            echo "RELEASE_TAG=${{ github.event.inputs.release_tag || env.VERSION }}" >> $GITHUB_ENV
-          fi
-
       - name: Rename artifact
-        run: mv ./target/${{ env.ARTIFACT_ID }}.jar ./target/${{ env.ARTIFACT_ID }}-${{ env.RELEASE_TAG }}.jar
+        run: mv ./target/${{ env.ARTIFACT_ID }}.jar ./target/${{ env.ARTIFACT_ID }}-${{ env.VERSION }}.jar
 
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
+          automatic_release_tag: "latest" 
           prerelease: false
-          title: Release ${{ env.RELEASE_TAG }}
+          title: "Release ${{ env.VERSION }}"
           files: |
-            ./target/${{ env.ARTIFACT_ID }}-${{ env.RELEASE_TAG }}.jar
+            ./target/${{ env.ARTIFACT_ID }}-${{ env.VERSION }}.jar
 
       - name: Login to DockerHub
         uses: docker/login-action@v2
@@ -82,4 +70,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           tags: |
             bayuairbenders/mcdash:latest
-            bayuairbenders/mcdash:${{ env.RELEASE_TAG }}
+            bayuairbenders/mcdash:${{ env.VERSION }}
