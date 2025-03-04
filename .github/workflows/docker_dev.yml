@@ -30,4 +30,4 @@ jobs:
         with:
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: germannewsmaker/mcdash:development
+          tags: bayuairbenders/mcdash:development
