@@ -63,7 +63,7 @@ if [ ! -f "bin/java" ]; then
     error "Unable to find java"
 fi
 
-echo -e "${GREEN}Installing wrapper${NC}"
+echo -e "${GREEN}Installing wrapper...${NC}"
 
 mkdir -p "${SERVER_ROOT}" || error "Unable to create server directory"
 
