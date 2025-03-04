@@ -59,19 +59,14 @@ jobs:
           fi
 
       - name: Create GitHub Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: marvinpinto/action-automatic-releases@latest
         with:
-          tag_name: ${{ github.event.inputs.release_tag || format('v{0}', env.VERSION) }}
-          release_name: Release ${{ env.VERSION }}
-          body: |-
-            Automated release for version ${{ env.VERSION }}
-            Changelog:
-            - Initial release
-          draft: false
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          automatic_release_tag: ${{ github.event.inputs.release_tag || format('v{0}', env.VERSION) }}
           prerelease: false
+          title: "Release ${{ env.VERSION }}"
+          files: |
+            ./target/${{ env.ARTIFACT_ID }}-${{ env.VERSION }}.jar
 
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
