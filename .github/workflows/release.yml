@@ -3,7 +3,8 @@ name: Java CI/CD
 on:
   workflow_dispatch:
   push:
-    tags: [ "v*" ]
+    tags:
+      - "v*" 
 
 jobs:
   create_release:
