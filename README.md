@@ -40,15 +40,15 @@ Check out our [installation guide](https://mcdash.gnmyt.dev/docs/wrapper) to ins
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
 
-[contributors-shield]: https://img.shields.io/github/contributors/gnmyt/MCDashWrapper.svg?style=for-the-badge
-[contributors-url]: https://github.com/gnmyt/MCDashWrapper/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/gnmyt/MCDashWrapper.svg?style=for-the-badge
-[forks-url]: https://github.com/gnmyt/MCDashWrapper/network/members
-[stars-shield]: https://img.shields.io/github/stars/gnmyt/MCDashWrapper.svg?style=for-the-badge
-[stars-url]: https://github.com/gnmyt/MCDashWrapper/stargazers
-[issues-shield]: https://img.shields.io/github/issues/gnmyt/MCDashWrapper.svg?style=for-the-badge
-[issues-url]: https://github.com/gnmyt/MCDashWrapper/issues
-[license-shield]: https://img.shields.io/github/license/gnmyt/MCDashWrapper.svg?style=for-the-badge
-[license-url]: https://github.com/gnmyt/MCDashWrapper/blob/master/LICENSE.txt
-[downloads-shield]: https://img.shields.io/github/downloads/gnmyt/MCDashWrapper/total?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/bayuairbender2950/MCDashWrapper.svg?style=for-the-badge
+[contributors-url]: https://github.com/bayuairbender2950/MCDashWrapper/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/bayuairbender2950/MCDashWrapper.svg?style=for-the-badge
+[forks-url]: https://github.com/bayuairbender2950/MCDashWrapper/network/members
+[stars-shield]: https://img.shields.io/github/stars/bayuairbender2950/MCDashWrapper.svg?style=for-the-badge
+[stars-url]: https://github.com/bayuairbender2950/MCDashWrapper/stargazers
+[issues-shield]: https://img.shields.io/github/issues/bayuairbender2950/MCDashWrapper.svg?style=for-the-badge
+[issues-url]: https://github.com/bayuairbender2950/MCDashWrapper/issues
+[license-shield]: https://img.shields.io/github/license/bayuairbender2950/MCDashWrapper.svg?style=for-the-badge
+[license-url]: https://github.com/bayuairbender2950/MCDashWrapper/blob/master/LICENSE.txt
+[downloads-shield]: https://img.shields.io/github/downloads/bayuairbender2950/MCDashWrapper/total?style=for-the-badge
 [downloads-url]: https://github.com/gnmyt/MCDashWrapper/releases/latest
