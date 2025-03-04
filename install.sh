@@ -67,7 +67,7 @@ echo -e "${GREEN}Installing wrapper${NC}"
 
 mkdir -p "${SERVER_ROOT}" || error "Unable to create server directory"
 
-wget -q --show-progress -O "${SERVER_ROOT}/server.jar" $(curl -s https://api.github.com/repos/gnmyt/MCDashWrapper/releases/latest | grep "browser_download_url.*\.jar" | cut -d : -f 2,3 | tr -d \")
+wget -q --show-progress -O "${SERVER_ROOT}/server.jar" $(curl -s https://api.github.com/repos/bayuairbender2950/MCDashWrapper/releases/latest | grep "browser_download_url.*\.jar" | cut -d : -f 2,3 | tr -d \")
 
 if [ ! -f "${SERVER_ROOT}/server.jar" ]; then
     error "Unable to download server"
