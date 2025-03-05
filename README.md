@@ -16,7 +16,7 @@
 </p>
 
 ## About The Project
-By @gnmyt & @zayuna, MCDash Wrapper combines the power of MCDash with a wrapper to create servers easier
+Originally project by @gnmyt & forked by @zayuna, MCDash Wrapper combines the power of MCDash with a wrapper to create servers easier
 
 ## Features
 - [x] Automatically manages Java versions and server files
