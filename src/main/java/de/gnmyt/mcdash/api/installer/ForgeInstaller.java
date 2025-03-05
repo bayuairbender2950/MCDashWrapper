@@ -1,15 +1,16 @@
 package de.gnmyt.mcdash.api.installer;
 
-import com.google.gson.Gson;
 import de.gnmyt.mcdash.api.Logger;
 import de.gnmyt.mcdash.api.ServerVersionManager;
 import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class ForgeInstaller implements VersionInstaller {
+
     private static final Logger LOG = new Logger(ForgeInstaller.class);
     private static final OkHttpClient client = new OkHttpClient();
     private static final String FORGE_VERSION_API = "https://files.minecraftforge.net/net/minecraftforge/forge/maven-metadata.json";
