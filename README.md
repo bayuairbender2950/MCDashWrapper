@@ -7,7 +7,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/gnmyt/MCDashWrapper">
+  <a href="https://github.com/gnmyt/MCDash">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/bxuP8yC.png">
         <img alt="MCDash Banner" src="https://i.imgur.com/aTxlW0Q.png">
@@ -16,7 +16,7 @@
 </p>
 
 ## About The Project
-MCDash Wrapper combines the power of MCDash with a wrapper to create servers easier
+By @gnmyt & @zayuna, MCDash Wrapper combines the power of MCDash with a wrapper to create servers easier
 
 ## Features
 - [x] Automatically manages Java versions and server files
@@ -35,7 +35,7 @@ MCDash Wrapper combines the power of MCDash with a wrapper to create servers eas
 ![Screenshot 3](https://i.imgur.com/xPXXRmH.png)
 
 ## Installation
-Check out our [installation guide](https://mcdash.gnmyt.dev/docs/wrapper) to install MCDash Wrapper on your server.
+Check out our [installation guide](https://mcdash.gnm.dev/docs/wrapper) to install MCDash Wrapper on your server.
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
