@@ -11,8 +11,8 @@ import java.util.HashMap;
 
 public class PaperInstaller implements VersionInstaller {
 
-    private static final String PAPER_URL = "https://papermc.io/api/v2/projects/paper/versions/%s/builds/%s/downloads/paper-%s-%s.jar";
-    private static final String PAPER_API = "https://papermc.io/api/v2/projects/paper/versions/%s";
+    private static final String PAPER_URL = "https://api.papermc.io/v2/projects/paper/versions/%s/builds/%s/downloads/paper-%s-%s.jar";
+    private static final String PAPER_API = "https://api.papermc.io/v2/projects/paper/versions/%s";
 
     private final OkHttpClient client = new OkHttpClient();
     private final Logger LOG = new Logger(PaperInstaller.class);
