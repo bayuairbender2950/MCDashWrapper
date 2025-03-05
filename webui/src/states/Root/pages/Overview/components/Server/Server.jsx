@@ -3,6 +3,7 @@ import {Dns, MoreVert} from "@mui/icons-material";
 import PurpurImage from "@/common/assets/software/purpur.webp";
 import PaperImage from "@/common/assets/software/paper.webp";
 import SpigotImage from "@/common/assets/software/spigot.webp";
+import ForgeImage from "@/common/assets/software/forge.webp";
 import {useContext, useEffect, useRef, useState} from "react";
 import {isDev, PROXY_URL} from "@/common/utils/RequestUtil.js";
 import ServerInfo from "@/states/Root/pages/Overview/components/Server/components/ServerInfo";
@@ -85,8 +86,7 @@ export const Server = ({uuid, configuration, status}) => {
                         </Avatar>
                         <Stack direction="column" gap={1} sx={{width: {xs: "100%", md: "100%", lg: "25rem"}}}>
                             <Stack direction="row" gap={1} alignItems="center">
-                                <img alt={configuration.type} style={{width: 25, height: 25}}
-                                     src={configuration.type === "purpur" ? PurpurImage : configuration.type === "paper" ? PaperImage : SpigotImage}/>
+                            <img alt={configuration.type} style={{width: 25, height: 25}} src={ configuration.type === "purpur" ? PurpurImage : configuration.type === "paper" ? PaperImage : configuration.type === "forge" ? ForgeImage : SpigotImage }/>
                                 <Typography variant="h6">{configuration.name}</Typography>
                                 <Chip label={configuration.version} color="primary" size="small"/>
                             </Stack>

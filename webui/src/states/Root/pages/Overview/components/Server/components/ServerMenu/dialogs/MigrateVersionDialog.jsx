@@ -15,6 +15,7 @@ import {ServerContext} from "@/common/contexts/Server";
 import SpigotImage from "@/common/assets/software/spigot.webp";
 import PaperImage from "@/common/assets/software/paper.webp";
 import PurpurImage from "@/common/assets/software/purpur.webp";
+import ForgeImage from "@/common/assets/software/forge.webp";
 import {VersionContext} from "@/common/contexts/Version/index.js";
 
 export default ({open, setOpen, uuid, setAlert, currentSoftware, currentVersion}) => {
@@ -66,6 +67,12 @@ export default ({open, setOpen, uuid, setAlert, currentSoftware, currentVersion}
                             <Stack direction="row" gap={1}>
                                 <img src={PurpurImage} alt="Purpur" width={24} height={24}/>
                                 Purpur
+                            </Stack>
+                        </MenuItem>
+                        <MenuItem value="forge">
+                            <Stack direction="row" gap={1}>
+                                <img src={ForgeImage} alt="forge" width={24} height={24}/>
+                                Forge
                             </Stack>
                         </MenuItem>
                     </Select>

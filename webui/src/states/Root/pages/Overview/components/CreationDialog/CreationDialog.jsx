@@ -14,6 +14,7 @@ import {
 import SpigotImage from "@/common/assets/software/spigot.webp";
 import PaperImage from "@/common/assets/software/paper.webp";
 import PurpurImage from "@/common/assets/software/purpur.webp";
+import ForgeImage from "@/common/assets/software/forge.webp";
 import {request} from "@/common/utils/RequestUtil.js";
 import {useContext, useEffect, useState} from "react";
 import {ServerContext} from "@/common/contexts/Server/index.js";
@@ -116,6 +117,12 @@ export const CreationDialog = ({dialogOpen, setDialogOpen}) => {
                             <Stack direction="row" gap={1}>
                                 <img src={PurpurImage} alt="Purpur" width={24} height={24}/>
                                 Purpur
+                            </Stack>
+                        </MenuItem>
+                        <MenuItem value="forge">
+                            <Stack direction="row" gap={1}>
+                                <img src={ForgeImage} alt="Forge" width={24} height={24}/>
+                                Forge
                             </Stack>
                         </MenuItem>
                     </Select>
