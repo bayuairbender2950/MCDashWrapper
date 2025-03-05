@@ -1,7 +1,6 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 [![Downloads][downloads-shield]][downloads-url]
 [![MIT License][license-shield]][license-url]
 
@@ -51,4 +50,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [license-shield]: https://img.shields.io/github/license/bayuairbender2950/MCDashWrapper.svg?style=for-the-badge
 [license-url]: https://github.com/bayuairbender2950/MCDashWrapper/blob/master/LICENSE.txt
 [downloads-shield]: https://img.shields.io/github/downloads/bayuairbender2950/MCDashWrapper/total?style=for-the-badge
-[downloads-url]: https://github.com/gnmyt/MCDashWrapper/releases/latest
+[downloads-url]: https://github.com/bayuairbender2950/McdashWrapper/releases/latest
